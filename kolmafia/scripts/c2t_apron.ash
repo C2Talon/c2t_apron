@@ -83,10 +83,13 @@ boolean c2t_apron(stat select) {
 		if (mat.group(2) == "1" && allowlist contains mat.group(1))
 			sendit += `&ingredients{meal}[]={mat.group(1)}`;
 
-	visit_url(sendit,true,false);
+	page = visit_url(sendit,true,false);
 
-	if (start < my_fullness())
+	if (start < my_fullness()
+		|| page.contains_text("<br>You cook and quickly consume your"))
+	{
 		return true;
+	}
 	return c2t_apron_error(`did not eat the {kit}`);
 }
 
