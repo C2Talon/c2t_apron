@@ -85,6 +85,8 @@ boolean c2t_apron(stat select) {
 
 	page = visit_url(sendit,true,false);
 
+	cli_execute("refresh inv");
+
 	if (start < my_fullness()
 		|| page.contains_text("<br>You cook and quickly consume your"))
 	{
