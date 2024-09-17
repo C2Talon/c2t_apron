@@ -54,6 +54,7 @@ boolean c2t_apron(stat select) {
 	matcher mat;
 	string sendit;
 	int start = my_fullness();
+	int startKits = item_amount(kit);
 	boolean[string] allowlist;
 
 	switch (select) {
@@ -88,6 +89,7 @@ boolean c2t_apron(stat select) {
 	cli_execute("refresh inv");
 
 	if (start < my_fullness()
+		|| startKits > item_amount(kit)
 		|| page.contains_text("<br>You cook and quickly consume your"))
 	{
 		return true;
