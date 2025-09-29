@@ -28,7 +28,7 @@ void main() {
 	out.append(c2t_apron_relay_text("h1","c2t_apron"));
 	out.append(c2t_apron_relay_text("p",'No changes will be made until the "save changes" button is used at the bottom.'));
 	out.append(c2t_apron_relay_text("h2","Ingredient Allowlist"));
-	out.append(c2t_apron_relay_text("p",'Select every ingredient you want to allow to be used in the Black and White Apron Meal Kit. See <a href="https://kol.coldfront.net/thekolwiki/index.php/Prepare_your_Meal" target="_blank">the kolwiki article</a> for what each ingredient does.'));
+	out.append(c2t_apron_relay_text("p",`Select every ingredient you want to allow to be used in the Black and White Apron Meal Kit. See <a href="{"Prepare your Meal".to_wiki_url()}" target="_blank">the wiki article</a> for what each ingredient does.`));
 	out.append(c2t_apron_relay_form());
 	out.append("</body></html>");
 	out.write();
