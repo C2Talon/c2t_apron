@@ -1,6 +1,6 @@
 # c2t_apron
 
-KoLmafia script written in ASH to handle the [Black and White Apron Meal Kit](https://kol.coldfront.net/thekolwiki/index.php/Black_and_White_Apron_Meal_Kit).
+KoLmafia script written in ASH to handle the [Black and White Apron Meal Kit](https://wiki.kingdomofloathing.com/Black_and_White_Apron_Meal_Kit).
 
 ## Usage
 
